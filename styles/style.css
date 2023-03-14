@@ -522,6 +522,14 @@ header .btns button:hover {
   opacity: 0.9;
 }
 
+main h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 main .aboutMeContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,7 +570,7 @@ main .aboutMeContainer .pfPic .fa {
   color: #3d535f;
 }
 main .aboutMeContainer figure img {
-  padding: 15px;
+  padding: 20px;
 }
 main .aboutMeContainer .aboutMeText {
   display: -webkit-box;
@@ -576,16 +584,9 @@ main .aboutMeContainer .aboutMeText {
   gap: 10px;
 }
 main .skills {
-  height: 60vh;
   padding: 50px 0;
 }
 main .skills h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 30px;
 }
 main .skills ul {
@@ -600,7 +601,7 @@ main .skills ul {
           justify-content: center;
 }
 main .skills ul li {
-  width: 30%;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,4 +622,76 @@ main .skills ul i {
 }
 main .skills ul .fa {
   font-size: 2rem;
+}
+main .projects ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+main .projects ul li {
+  width: 60%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .projects ul img {
+  max-height: 400px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+main .projects ul img:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+main .contactMe h2 {
+  padding: 50px 0 20px 0;
+}
+main .contactMe p {
+  width: 50%;
+}
+main .contactMe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .contactMe form input,
+main .contactMe form textarea {
+  width: 50%;
+  padding: 5px 5px;
+  border: none;
+}
+main .contactMe form button {
+  background-color: #eff0f4;
+  width: 10%;
+  padding: 10px 0;
+}
+main .contactMe form a {
+  color: #3d535f;
 }

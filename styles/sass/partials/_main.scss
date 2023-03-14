@@ -1,12 +1,15 @@
 @use './variables' as *;
 
 main {
+    h2{
+        display: flex;
+        justify-content: center;
+       
+    }
+
     .aboutMeContainer {
         display: flex;
         gap: 20px;
-
-        h2 {
-        }
 
         .pfPic {
             width: 100%;
@@ -40,7 +43,7 @@ main {
 
         figure {
             img {
-                padding: 15px;
+                padding: 20px;
             }
         }
 
@@ -53,12 +56,9 @@ main {
     }
 
     .skills{
-        height: 60vh;
         padding: 50px 0;
 
         h2 {
-            display: flex;
-            justify-content: center;
             padding-bottom: 30px;
         }
 
@@ -69,7 +69,7 @@ main {
             justify-content: center;
 
             li {
-                width: 30%;
+                width: 20%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -87,6 +87,74 @@ main {
                 font-size: 2rem;
             }
         }
+    }
+
+
+    .projects {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            padding-top: 50px;
+            
+            li {
+                width: 60%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                
+            }
+
+            img {
+                max-height: 400px;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: translateY(-10px)
+            }
+        }
+    }
+
+    .contactMe {
+        h2 {
+            padding: 50px 0 20px 0;
+        }
+
+        p{
+            width: 50%;
+          
+        }
+
+        form{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+            align-items: center;
+            
+
+            input,
+            textarea {
+                width: 50%;
+                padding: 5px 5px;
+                border: none;
+            }
+
+            button{
+                background-color: #eff0f4;
+                width: 10%;
+                padding: 10px 0;
+            }
+
+            a{
+                color: $primaryGrey;
+            }
+        }
+
     }
 
 }

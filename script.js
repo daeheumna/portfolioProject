@@ -30,7 +30,6 @@ document.addEventListener('click', (event) => {
 })
 
 
-
 var typingEffect = new Typed('.autoType', {
     strings : ['Dae Heum', 'coder', 'web-Dev', 'designer'],
     typeSpeed: 110,

@@ -40,7 +40,7 @@
 
             <div class="heading">
                 <div class="cols clos0">
-                    <span class="line">Hello</span>
+                    <span class="line">hello</span>
                     <h1>I'm <span class="autoType"></span></h1>
 
                     <div class="btns">
@@ -53,7 +53,9 @@
     </header>
     <main>
         <section class="aboutMe" id="aboutMe">
-            <div class="wrapper aboutMeContainer">
+            <div class="wrapper aboutMeInfo">
+                <h2 class="aboutMeHeader">about me</h2>
+                <div class="aboutMeContainer">
                 <div class="pfPic">
                     <figure class="imgContainer inner-shadow">
                         <img src="https://www.placebear.com/200/200" class="outer-shadow" alt="profilePicture">
@@ -67,31 +69,78 @@
                 </div>
 
                 <div class="aboutMeText">
-                    <h2>About Me</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum laborum eligendi nobis amet minima, dolores laboriosam consectetur similique eum voluptatibus dolorem dicta ut blanditiis id facere libero vero incidunt reiciendis quibusdam doloribus neque tempora. Error vero voluptatum doloremque. Hic ullam incidunt ut fugiat vitae quod ratione, eaque fuga minus?</p>
                 </div>
+            </div>
             </div>
         </section>
 
         <section class="skills">
             <div class="wrapper">
-                <h2>Skills</h2>
+                <h2>skills</h2>
                 <ul>
                     <li><i class="fa fa-html5 inner-shadow"></i>HTML5</li>
-                    <li class="outer-shadow"><i class="fa fa-css3"></i>CSS</li>
-                    <li class="outer-shadow"><i class=""></i>JavaScript</li>
-                    <li class="outer-shadow"><i class=""></i>Sass</li>
-                    <li class="outer-shadow"><i class=""></i>React</li>
-                    <li class="outer-shadow"><i class=""></i>REST APIs</li>
-                    <li class="outer-shadow"><i class=""></i>FireBase</li>
-                    <li class="outer-shadow"><i class="fa fa-code-fork"></i>Git</li>
-                    <li class="outer-shadow"><i class=""></i>Responsive Design</li>
-                    <li class="outer-shadow"><i class=""></i>Accessibility</li>
-                    <li class="outer-shadow"><i class=""></i>Clean Code</li>
+                    <li><i class="fa fa-css3 inner-shadow"></i>CSS</li>
+                    <li><i class=""></i>JavaScript</li>
+                    <li><i class=""></i>Sass</li>
+                    <li><i class=""></i>React</li>
+                    <li><i class=""></i>REST APIs</li>
+                    <li><i class=""></i>FireBase</li>
+                    <li><i class="fa fa-code-fork inner-shadow"></i>Git</li>
                 </ul>
             </div>
-
         </section>
+
+        <section class="projects">
+            <div class="wrapper">
+                <h2>projects</h2>
+
+                <ul>
+                    <li class="outer-shadow">
+                        <img src="./assets/jobHunt.jpeg.png" alt="job application app">
+                        <h4>JobHunt</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officia iste necessitatibus ipsa nihil fugit rerum expedita qui quae? Non.</p>
+                        <h5>Made With:</h5>
+                    </li>
+                    <li class="outer-shadow">
+                        <img src="./assets/delish.jpeg.png" alt="website design for a restaurant">
+                        <h4>Delicious</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa magni explicabo est delectus animi ab voluptates labore dolor vero.</p>
+                        <h5>Made With:</h5>
+                    </li>
+                    <li class="outer-shadow">
+                        <img src="./assets/arora.jpeg.png" alt="website design for a jewelry">
+                        <h4>ARORA</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, modi vel. Dicta, facere? Earum voluptatibus sapiente saepe illum! Laboriosam, voluptas?</p>
+                        <h5>Made With:</h5>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contactMe">
+            <div class="wrapper">
+                <h2>get in touch</h2>
+
+                <form action="#" method="post" name="contactForm">
+
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" placeholder="name" id="name">
+
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" placeholder="email" id="email">
+
+                    <label for="message"></label>
+                    <textarea name="message" id="message" placeholder="message" cols="100" rows="10" minlength="5"></textarea>
+
+                    <button class="outer-shadow  hover-in-shadow"><a href="">Send</a></button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>made in 2023 by Dae Heum Na</p>
+        </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./script.js"></script>
