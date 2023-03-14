@@ -4,18 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio under construction</title>
+    <title>Dae Heum Na Portfolio</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="wrapper">
-            <h1>This site is under construction</h1>
+            <nav class="navBar">
+                <h3>dna.</h1>
+
+                <div class="hamburger-btn outer-shadow hover-in-shadow">
+                    <span></span>
+                </div>
+            </nav>
+
+            <nav class="nav-menu">
+                <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+                <div class="nav-menu-inner">
+                    <ul>
+                        <li><a href="#home" class="link-item outer-shadow hover-in-shadow active">home</a></li>
+                        <li><a href="#aboutMe" class="link-item outer-shadow hover-in-shadow">about</a></li>
+                        <li><a href="#" class="link-item outer-shadow hover-in-shadow">projects</a></li>
+                        <li><a href="#" class="link-item outer-shadow hover-in-shadow">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class = "fade-out-effect"></div>
+      
+
+            <div class="heading">
+                <div class="cols clos0">
+                    <span class="line">Hello</span>
+                    <h1>I'm <span class="autoType"></span></h1>
+
+                    <div class="btns">
+                        <button class="outer-shadow  hover-in-shadow">CV</button>
+                        <button class="outer-shadow hover-in-shadow">Contact</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem iure tempora ab iste quos, perferendis animi esse voluptatem nihil facilis dicta. Iusto ullam voluptatibus possimus, ipsum, nisi sunt veniam iure voluptatem aspernatur repellat alias in itaque corrupti, quasi nostrum.</p>
+        <section class="aboutMe" id="aboutMe">
+            <div class="wrapper aboutMeContainer">
+                <div class="pfPic">
+                    <figure class="imgContainer inner-shadow">
+                        <img src="https://www.placebear.com/200/200" class="outer-shadow" alt="profilePicture">
+                        </img>
+                    </figure>
+
+                    <div class="socialIcons">
+                        <button class="fa fa-github outer-shadow outer-shadow hover-in-shadow"></button>
+                        <button  class="fa fa-linkedin outer-shadow outer-shadow hover-in-shadow"></button>
+                    </div>
+                </div>
+
+                <div class="aboutMeText">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum laborum eligendi nobis amet minima, dolores laboriosam consectetur similique eum voluptatibus dolorem dicta ut blanditiis id facere libero vero incidunt reiciendis quibusdam doloribus neque tempora. Error vero voluptatum doloremque. Hic ullam incidunt ut fugiat vitae quod ratione, eaque fuga minus?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="wrapper">
+                <h2>Skills</h2>
+                <ul>
+                    <li><i class="fa fa-html5 inner-shadow"></i>HTML5</li>
+                    <li class="outer-shadow"><i class="fa fa-css3"></i>CSS</li>
+                    <li class="outer-shadow"><i class=""></i>JavaScript</li>
+                    <li class="outer-shadow"><i class=""></i>Sass</li>
+                    <li class="outer-shadow"><i class=""></i>React</li>
+                    <li class="outer-shadow"><i class=""></i>REST APIs</li>
+                    <li class="outer-shadow"><i class=""></i>FireBase</li>
+                    <li class="outer-shadow"><i class="fa fa-code-fork"></i>Git</li>
+                    <li class="outer-shadow"><i class=""></i>Responsive Design</li>
+                    <li class="outer-shadow"><i class=""></i>Accessibility</li>
+                    <li class="outer-shadow"><i class=""></i>Clean Code</li>
+                </ul>
+            </div>
+
+        </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./script.js"></script>
+    
 </body>
 </html>

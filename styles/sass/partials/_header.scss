@@ -1,0 +1,220 @@
+@use './variables' as *;
+
+
+header {
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding-top: 10px;
+        color: #3d535f;
+    }
+
+    // Ham Menu
+    .hamburger-btn {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3 ease;
+
+        span {
+            display: block;
+            height: 2px;
+            width: 16px; 
+            background-color: #3d535f;  
+            position: relative;
+        }
+    }
+
+    .hamburger-btn:after {
+        border-radius: 50%;
+    }
+
+    .hamburger-btn span:before,
+    .hamburger-btn span:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #3d535f;
+    }
+
+    .hamburger-btn span:before {
+        top: -6px;
+    }
+
+    .hamburger-btn span:after {
+        top: 6px;
+    }
+
+    // Nav Menu  
+    .nav-menu {
+        position: fixed;
+        background-color: #eff0f4;
+        padding: 0 15px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        overflow-y: auto;
+        visibility: hidden;
+        
+    }
+
+    .fade-out-effect{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        background-color: #eff0f4;
+    }
+
+    .fade-out-effect.active{
+        visibility: visible;
+        z-index: 1001;
+        animation: fadeOut 0.4s ease-out;
+    }
+
+    @keyframes fadeOut {
+        0%{
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .nav-menu.open{
+        visibility: visible;
+        opacity: 1;
+        z-index: 1000;
+        transition: all 0.3s ease-in;
+    }
+
+    .nav-menu .close-nav-menu {
+        height: 40px;
+        width: 40px;
+        display: block;
+        font-size: 1.5rem;
+        line-height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        right: 3%;
+        top: 15px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .nav-menu .close-nav-menu:after{
+        border-radius: 50%;
+    }
+
+    .nav-menu-inner {
+        min-height: 100vh;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-menu ul{
+        padding: 20px;
+
+        li {
+            display: block;
+            margin-bottom: 20px;
+
+            a {
+                display: inline-block;
+                font-size: 1.2rem;
+                font-weight: 600;
+                padding: 5px 30px;
+                border-radius: 30px;
+                color: #3d535f;
+                transition: all 0.3s ease;
+            }
+
+            a:after {
+                border-radius: 30px;
+            }
+        }
+
+        li:last-child{
+            margin-bottom:0;
+        }
+    }
+
+
+    .heading {
+        display:flex;
+        height: 100vh;
+        padding: 15% 0 0 0%;
+        overflow: hidden;
+    }
+
+    .cols {
+        width: 50%;
+    }
+
+    .cols {
+        width: 100%;
+    }
+
+    .line {
+        display: block;
+        position: relative;
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+        color: #3d535f;
+    }
+
+    .line::after {
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 30px;
+        bottom: 5px;
+        background-color: #3d535f;
+    }
+
+    h1 {
+        display: block;
+        font-size: 5rem;
+        font-weight: 900;
+        color:#3d535f;
+        width: 100%;
+    }
+
+    .autoType {
+        text-transform: capitalize;
+    }
+
+    .btns {
+        width: 100%;
+        position: relative;
+        left: 10%;
+        
+        button {
+            color: #3d535f;
+            background-color: #eff0f4;
+            padding: 8px 15px;
+            margin: 10px 5px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            // box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        button:hover{
+            opacity: 0.9;
+        }
+    }
+
+}

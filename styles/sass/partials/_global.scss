@@ -1,0 +1,81 @@
+@use './variables' as *;
+
+html {
+    font-size: 125%;
+}
+
+body {
+    background-color: #eff0f4;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+.outer-shadow{
+    box-shadow: $outerShadow;
+}
+
+.inner-shadow {
+    box-shadow: $innerShadow;
+}
+
+.hover-in-shadow{
+    position: relative;
+    z-index: 1;
+}
+
+.hover-in-shadow:hover{
+    box-shadow: $outerShadow0
+}
+
+.hover-in-shadow:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.hover-in-shadow:hover:after{
+    box-shadow: $innerShadow;
+}
