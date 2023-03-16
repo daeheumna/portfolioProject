@@ -49,12 +49,12 @@
 
                     <div class="btns">
                         <button class="outer-shadow  hover-in-shadow">CV</button>
-                        <button class="outer-shadow hover-in-shadow">Contact</button>
+                        <a href="#contactMe"><button class="outer-shadow hover-in-shadow">Contact</button></a>
                     </div>
                 </div>
             </div>
 
-            <button class="downArrow"><i class="fa fa-angle-double-down"></i></button>
+            <button class="downArrow"><a href='#aboutMe'class="fa fa-angle-double-down"></a></button>
         </div>
     </header>
     <main>
@@ -85,14 +85,14 @@
             <div class="wrapper">
                 <h2>skills</h2>
                 <ul>
-                    <li><i class="fa fa-html5 inner-shadow"></i>HTML5</li>
-                    <li><i class="fa fa-css3 inner-shadow"></i>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Sass</li>
-                    <li><i class=""></i>React</li>
-                    <li><i class=""></i>REST APIs</li>
-                    <li>FireBase</li>
-                    <li>Git</li>
+                    <li><img src="./assets/html-svgrepo-com.svg" alt="html5 logo" class="inner-shadow">HTML5</li>
+                    <li><img src="./assets/css3-svgrepo-com.svg" alt="css logo" class="inner-shadow">CSS</li>
+                    <li><img src="./assets/javascript-svgrepo-com (1).svg" alt='javascriptlogo' class="inner-shadow"></img>JavaScript</li>
+                    <li><img src="./assets/icons8-sass-avatar.svg" alt="sass logo" class="inner-shadow"></img>Sass</li>
+                    <li><img src="./assets/icons8-react.svg" alt="react logo" class="inner-shadow"></img>React</li>
+                    <li><img src="./assets/rest-api-icon.svg" alt="rest apilogo" class="inner-shadow"></i>REST APIs</li>
+                    <li><img src="./assets/icons8-firebase.svg" alt="firebase logo" class="inner-shadow">FireBase</li>
+                    <li><img src="./assets/icons8-git.svg" alt="git logo" class="inner-shadow">Git</li>
                 </ul>
             </div>
         </section>
@@ -130,16 +130,21 @@
 
                 <form action="#" method="post" name="contactForm">
 
-                    <div class="visitorInfo">
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" placeholder="name" id="name">
+                    <div class="formText">
+                        <div class="visitorInfo">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" placeholder="name" id="name" class="outer-shadow">
 
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="email" placeholder="email" id="email">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" placeholder="email" id="email" class="outer-shadow">
+
+                            <label for="subject" class="sr-only">Subject</label>
+                            <input type="text" placeholder="subject" id="subject" class="outer-shadow">
+                        </div>
+
+                        <label for="message"></label>
+                        <textarea name="message" id="message" placeholder="message" cols="100" rows="10" minlength="5" class="outer-shadow"></textarea>
                     </div>
-
-                    <label for="message"></label>
-                    <textarea name="message" id="message" placeholder="message" cols="100" rows="10" minlength="5"></textarea>
 
                     <button class="outer-shadow  hover-in-shadow"><a href="">Send</a></button>
                 </form>

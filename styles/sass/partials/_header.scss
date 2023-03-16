@@ -11,6 +11,7 @@ header {
         padding-top: 10px;
         color: #3d535f;
         position: fixed;
+        // background-color: $primaryWhite;
     }
 
     // Ham Menu
@@ -225,6 +226,7 @@ header {
         right: 50%;
         font-size: 3rem;
         animation: floating 2s ease infinite;
+        color: $primaryGrey;
     }
 
     

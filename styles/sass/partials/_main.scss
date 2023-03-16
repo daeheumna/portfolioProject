@@ -84,6 +84,16 @@ main {
                 padding: 20px;
                 border-radius: 50%;
             }
+
+            img {
+                height: 80px;
+                width: 80px;
+                padding: 15px;
+                border-radius: 50%;
+            }
+
+
+
             
             .fa {
                 font-size: 2rem;
@@ -134,25 +144,37 @@ main {
         form{
             display:flex;
             flex-direction: column;
-            gap:5px;
+            gap:20px;
             align-items: center;
-            
-            textarea {
-                width: 50%;
-                padding: 5px 10px;
-                border: none;
+
+            .formText {
+                display: flex;
+                gap: 20px;
             }
 
             .visitorInfo {
                 display: flex;
+                flex-direction: column;
                 gap: 20px;
                 width: 50%;
+                
             }
 
             input {
                 border: none;
-                padding: 10px 10px;
+                padding: 10px 20px;
                 width: 100%;
+                border-radius: 25px;
+                background-color: $primaryWhite;
+            }
+
+            textarea {
+                width: 50%;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 25px;
+                height: 170px;
+                background-color: $primaryWhite;
             }
 
             button{
@@ -160,6 +182,11 @@ main {
                 width: 10%;
                 padding: 10px 0;
                 margin-top: 10px;
+                border-radius: 25px;
+            }
+
+            button:after{
+                border-radius: 25px;
             }
 
             a{
@@ -173,6 +200,10 @@ main {
         justify-content: center;
         padding: 10px;
         margin-top: 30px;
+
+        p {
+            font-size: 0.6rem;
+        }
     }
 
 }
