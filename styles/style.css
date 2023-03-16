@@ -270,9 +270,10 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, li, button {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .outer-shadow {
@@ -311,6 +312,9 @@ h1, h2, h3, h4, h5, h6, p, a {
           box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
 }
 
+header {
+  height: 100vh;
+}
 header .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,6 +325,7 @@ header .navBar {
   cursor: pointer;
   padding-top: 10px;
   color: #3d535f;
+  position: fixed;
 }
 header .hamburger-btn {
   height: 40px;
@@ -470,7 +475,6 @@ header .heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   padding: 15% 0 0 0%;
   overflow: hidden;
 }
@@ -521,6 +525,42 @@ header .btns button {
 header .btns button:hover {
   opacity: 0.9;
 }
+header .fa-angle-double-down {
+  position: absolute;
+  bottom: 3%;
+  right: 50%;
+  font-size: 3rem;
+  -webkit-animation: floating 2s ease infinite;
+          animation: floating 2s ease infinite;
+}
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
 
 main h2 {
   display: -webkit-box;
@@ -529,6 +569,7 @@ main h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px 0 80px 0;
 }
 main .aboutMeContainer {
   display: -webkit-box;
@@ -580,8 +621,9 @@ main .aboutMeContainer .aboutMeText {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 100px;
+  padding: 30px 20px 0 20px;
   gap: 10px;
+  line-height: 24px;
 }
 main .skills {
   padding: 50px 0;
@@ -635,10 +677,9 @@ main .projects ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 50px;
 }
 main .projects ul li {
-  width: 60%;
+  width: 50%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,7 +704,7 @@ main .projects ul img:hover {
           transform: translateY(-10px);
 }
 main .contactMe h2 {
-  padding: 50px 0 20px 0;
+  padding: 80px 0 40px 0;
 }
 main .contactMe p {
   width: 50%;
@@ -676,22 +717,44 @@ main .contactMe form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-main .contactMe form input,
 main .contactMe form textarea {
   width: 50%;
-  padding: 5px 5px;
+  padding: 5px 10px;
   border: none;
+}
+main .contactMe form .visitorInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+main .contactMe form input {
+  border: none;
+  padding: 10px 10px;
+  width: 100%;
 }
 main .contactMe form button {
   background-color: #eff0f4;
   width: 10%;
   padding: 10px 0;
+  margin-top: 10px;
 }
 main .contactMe form a {
   color: #3d535f;
+}
+main footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin-top: 30px;
 }

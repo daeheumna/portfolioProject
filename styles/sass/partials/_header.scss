@@ -2,12 +2,15 @@
 
 
 header {
+    height: 100vh;
+
     .navBar {
         display: flex;
         justify-content: space-between;
         cursor: pointer;
         padding-top: 10px;
         color: #3d535f;
+        position: fixed;
     }
 
     // Ham Menu
@@ -155,7 +158,6 @@ header {
 
     .heading {
         display:flex;
-        height: 100vh;
         padding: 15% 0 0 0%;
         overflow: hidden;
     }
@@ -217,4 +219,26 @@ header {
         }
     }
 
+    .fa-angle-double-down {
+        position: absolute;
+        bottom: 3%;
+        right: 50%;
+        font-size: 3rem;
+        animation: floating 2s ease infinite;
+    }
+
+    
+    @keyframes floating {
+        0% {
+          transform: translateY(-20%);
+        }
+      
+        50% {
+          transform: translateY(20%);
+        }
+      
+        100% {
+          transform: translateY(-20%);
+        }
+      }
 }

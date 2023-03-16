@@ -10,12 +10,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
     <header id="home">
         <div class="wrapper">
-            <nav class="navBar">
+            <nav class="navBar wrapper">
                 <h3>dna.</h1>
 
                 <div class="hamburger-btn outer-shadow hover-in-shadow">
@@ -29,8 +33,8 @@
                     <ul>
                         <li><a href="#home" class="link-item outer-shadow hover-in-shadow active">home</a></li>
                         <li><a href="#aboutMe" class="link-item outer-shadow hover-in-shadow">about</a></li>
-                        <li><a href="#" class="link-item outer-shadow hover-in-shadow">projects</a></li>
-                        <li><a href="#" class="link-item outer-shadow hover-in-shadow">contact</a></li>
+                        <li><a href="#projects" class="link-item outer-shadow hover-in-shadow">projects</a></li>
+                        <li><a href="#contactMe" class="link-item outer-shadow hover-in-shadow">contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -49,6 +53,8 @@
                     </div>
                 </div>
             </div>
+
+            <button class="downArrow"><i class="fa fa-angle-double-down"></i></button>
         </div>
     </header>
     <main>
@@ -75,42 +81,42 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section id='skills' class="skills">
             <div class="wrapper">
                 <h2>skills</h2>
                 <ul>
                     <li><i class="fa fa-html5 inner-shadow"></i>HTML5</li>
                     <li><i class="fa fa-css3 inner-shadow"></i>CSS</li>
-                    <li><i class=""></i>JavaScript</li>
-                    <li><i class=""></i>Sass</li>
+                    <li>JavaScript</li>
+                    <li>Sass</li>
                     <li><i class=""></i>React</li>
                     <li><i class=""></i>REST APIs</li>
-                    <li><i class=""></i>FireBase</li>
-                    <li><i class="fa fa-code-fork inner-shadow"></i>Git</li>
+                    <li>FireBase</li>
+                    <li>Git</li>
                 </ul>
             </div>
         </section>
 
-        <section class="projects">
+        <section id='projects' class="projects">
             <div class="wrapper">
                 <h2>projects</h2>
 
                 <ul>
                     <li class="outer-shadow">
                         <img src="./assets/jobHunt.jpeg.png" alt="job application app">
-                        <h4>JobHunt</h4>
+                        <h4>jobhunt</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officia iste necessitatibus ipsa nihil fugit rerum expedita qui quae? Non.</p>
                         <h5>Made With:</h5>
                     </li>
                     <li class="outer-shadow">
                         <img src="./assets/delish.jpeg.png" alt="website design for a restaurant">
-                        <h4>Delicious</h4>
+                        <h4>delicious</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa magni explicabo est delectus animi ab voluptates labore dolor vero.</p>
                         <h5>Made With:</h5>
                     </li>
                     <li class="outer-shadow">
                         <img src="./assets/arora.jpeg.png" alt="website design for a jewelry">
-                        <h4>ARORA</h4>
+                        <h4>arora</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, modi vel. Dicta, facere? Earum voluptatibus sapiente saepe illum! Laboriosam, voluptas?</p>
                         <h5>Made With:</h5>
                     </li>
@@ -118,17 +124,19 @@
             </div>
         </section>
 
-        <section class="contactMe">
+        <section id='contactMe' class="contactMe">
             <div class="wrapper">
                 <h2>get in touch</h2>
 
                 <form action="#" method="post" name="contactForm">
 
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" placeholder="name" id="name">
+                    <div class="visitorInfo">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" placeholder="name" id="name">
 
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" placeholder="email" id="email">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" placeholder="email" id="email">
+                    </div>
 
                     <label for="message"></label>
                     <textarea name="message" id="message" placeholder="message" cols="100" rows="10" minlength="5"></textarea>
@@ -138,7 +146,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer class="outer-shadow">
             <p>made in 2023 by Dae Heum Na</p>
         </footer>
     </main>

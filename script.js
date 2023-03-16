@@ -38,3 +38,6 @@ var typingEffect = new Typed('.autoType', {
     cursorChar: '_',
     loop : true
 })
+
+
+
