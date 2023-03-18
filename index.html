@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="./styles/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +22,13 @@
         <div class="wrapper">
             <nav class="navBar wrapper">
                 <h3>dna.</h1>
+
+                <!-- <ul class="navItems">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#aboutMe">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contactMe">contact</a></li>
+                </ul> -->
 
                 <div class="hamburger-btn outer-shadow hover-in-shadow">
                     <span></span>
@@ -62,38 +70,41 @@
             <div class="wrapper aboutMeInfo">
                 <h2 class="aboutMeHeader">about me</h2>
                 <div class="aboutMeContainer">
-                <div class="pfPic">
-                    <figure class="imgContainer inner-shadow">
-                        <img src="https://www.placebear.com/200/200" class="outer-shadow" alt="profilePicture">
-                        </img>
-                    </figure>
-
-                    <div class="socialIcons">
-                        <button class="fa fa-github outer-shadow outer-shadow hover-in-shadow"></button>
-                        <button  class="fa fa-linkedin outer-shadow outer-shadow hover-in-shadow"></button>
+                    <div class="pfPic">
+                        <figure class="imgContainer inner-shadow">
+                            <img src="./assets/325960595_692631439082334_2039767017766647968_n.jpg" class="outer-shadow" alt="profilePicture">
+                            </img>
+                        </figure>
+                        
+                        <div class="socialIcons">
+                            <a href="https://github.com/daeheumna?tab=repositories" target= "_blank"><button class="fa-brands fa-github outer-shadow outer-shadow hover-in-shadow"></button></a>
+                            <a href="https://www.linkedin.com/in/daeheumna/" target= "_blank"><button  class="fa-brands fa-linkedin outer-shadow outer-shadow hover-in-shadow"></button></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="aboutMeText">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum laborum eligendi nobis amet minima, dolores laboriosam consectetur similique eum voluptatibus dolorem dicta ut blanditiis id facere libero vero incidunt reiciendis quibusdam doloribus neque tempora. Error vero voluptatum doloremque. Hic ullam incidunt ut fugiat vitae quod ratione, eaque fuga minus?</p>
-                </div>
-            </div>
-            </div>
-        </section>
+                    <div class="aboutMeText">
+                        <h3>Hey, I'm Denny!</h3>
+                        <p>Hey friend, thanks for stopping by! I'm a front-end web developer based in Toronto, Canada. I have a web-dev certificate from <a>Juno College of Technology</a> and a bachelor degree in kinesiology and exercise science from Queen's University.</p>
 
-        <section id='skills' class="skills">
-            <div class="wrapper">
-                <h2>skills</h2>
-                <ul>
-                    <li><img src="./assets/html-svgrepo-com.svg" alt="html5 logo" class="inner-shadow">HTML5</li>
-                    <li><img src="./assets/css3-svgrepo-com.svg" alt="css logo" class="inner-shadow">CSS</li>
-                    <li><img src="./assets/javascript-svgrepo-com (1).svg" alt='javascriptlogo' class="inner-shadow"></img>JavaScript</li>
-                    <li><img src="./assets/icons8-sass-avatar.svg" alt="sass logo" class="inner-shadow"></img>Sass</li>
-                    <li><img src="./assets/icons8-react.svg" alt="react logo" class="inner-shadow"></img>React</li>
-                    <li><img src="./assets/rest-api-icon.svg" alt="rest apilogo" class="inner-shadow"></i>REST APIs</li>
-                    <li><img src="./assets/icons8-firebase.svg" alt="firebase logo" class="inner-shadow">FireBase</li>
-                    <li><img src="./assets/icons8-git.svg" alt="git logo" class="inner-shadow">Git</li>
-                </ul>
+                        <p>Other than coding, I am a massive foodie. I love travelling around Toronto, trying out new restaurants. Feel free to reach out with any restaurant recommendations!</p>
+
+                        <div class="skills">
+                            <h2>my toolkit</h2>
+                            <ul>
+                                <li><i class="fa-brands fa-html5 inner-shadow"></i>HTML5</li>
+                                <li><i class="fa-brands fa-css3 inner-shadow"></i>CSS</li>
+                                <li><i class="fa-brands fa-square-js inner-shadow"></i>JavaScript</li>
+                                <li><i class="fa-brands fa-sass inner-shadow"></i>Sass</li>
+                                <li><i class="fa-brands fa-react inner-shadow"></i>React</li>
+                                <li><img src="./assets/rest-api-icon.svg" alt="rest apilogo" class="inner-shadow"></i>REST APIs</li>
+                                <li><img src="./assets/icons8-firebase.svg" alt="firebase logo" class="inner-shadow">FireBase</li>
+                                <li><i class="fa-brands fa-git-alt inner-shadow"></i>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+
+              
+                </div>
             </div>
         </section>
 
@@ -103,24 +114,51 @@
 
                 <ul>
                     <li class="outer-shadow">
-                        <img src="./assets/jobHunt.jpeg.png" alt="job application app">
+                        <div class="container"><img src="./assets/jobHunt.jpeg.png" alt="job application app" data-modal="modal-one"></div>
+                        <p>view more</p>
                         <h4>jobhunt</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officia iste necessitatibus ipsa nihil fugit rerum expedita qui quae? Non.</p>
                         <h5>Made With:</h5>
                     </li>
                     <li class="outer-shadow">
-                        <img src="./assets/delish.jpeg.png" alt="website design for a restaurant">
+                        <div class="container"><img src="./assets/delish.jpeg.png" alt="website design for a restaurant" data-modal="modal-two"></div>
+                        <p>view more</p>
                         <h4>delicious</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa magni explicabo est delectus animi ab voluptates labore dolor vero.</p>
                         <h5>Made With:</h5>
                     </li>
                     <li class="outer-shadow">
-                        <img src="./assets/arora.jpeg.png" alt="website design for a jewelry">
+                        <div class="container"><img src="./assets/arora.jpeg.png" alt="website design for a jewelry" data-modal="modal-three"></div>
+                        <p>view more</p>
                         <h4>arora</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, modi vel. Dicta, facere? Earum voluptatibus sapiente saepe illum! Laboriosam, voluptas?</p>
                         <h5>Made With:</h5>
                     </li>
                 </ul>
+
+                <div class="modal" id="modal-one">
+                    <div class="modal-bg modal-exit"></div>
+                    <div class="modal-container">
+                        <h2>Recipes</h2>   
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sint voluptatum ab eaque reprehenderit. Natus dignissimos impedit enim magni soluta, placeat maxime ratione fugiat delectus quia pariatur quam iure dolorum accusantium at quod? Ex natus sed velit dolore. Eum eos pariatur reiciendis laborum suscipit laudantium error corporis totam cupiditate iure!</div>
+                      <button class="modal-close modal-exit">X</button>
+                    </div>
+                  </div>
+
+                  <div class="modal" id="modal-two">
+                    <div class="modal-bg modal-exit"></div>
+                    <div class="modal-container">
+                        <h2>Recipes</h2>   
+                        <div>Lorem!</div>
+                      <button class="modal-close modal-exit">X</button>
+                    </div>
+                  </div>
+
+                  <div class="modal" id="modal-three">
+                    <div class="modal-bg modal-exit"></div>
+                    <div class="modal-container">
+                        <h2>Recipes</h2>   
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cum.</div>
+                      <button class="modal-close modal-exit">X</button>
+                    </div>
+                  </div>
             </div>
         </section>
 
@@ -133,17 +171,17 @@
                     <div class="formText">
                         <div class="visitorInfo">
                             <label for="name" class="sr-only">Name</label>
-                            <input type="text" placeholder="name" id="name" class="outer-shadow">
+                            <input type="text" placeholder="name" id="name" class="outer-shadow" required> 
 
                             <label for="email" class="sr-only">Email</label>
-                            <input type="email" placeholder="email" id="email" class="outer-shadow">
+                            <input type="email" placeholder="email" id="email" class="outer-shadow" required>
 
                             <label for="subject" class="sr-only">Subject</label>
                             <input type="text" placeholder="subject" id="subject" class="outer-shadow">
                         </div>
 
                         <label for="message"></label>
-                        <textarea name="message" id="message" placeholder="message" cols="100" rows="10" minlength="5" class="outer-shadow"></textarea>
+                        <textarea name="message" id="message" placeholder="message" cols="100" rows="10" minlength="5" class="outer-shadow" required></textarea>
                     </div>
 
                     <button class="outer-shadow  hover-in-shadow"><a href="">Send</a></button>

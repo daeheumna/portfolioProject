@@ -4,7 +4,7 @@ main {
     h2{
         display: flex;
         justify-content: center;
-        padding: 30px 0 80px 0;
+        padding: 70px 0 80px 0;
        
     }
 
@@ -13,7 +13,7 @@ main {
         gap: 20px;
 
         .pfPic {
-            width: 100%;
+            width: 60%;
             display: flex;
             flex-direction: column;
             gap: 15px;
@@ -34,9 +34,9 @@ main {
                 
             }
 
-            .fa {
+            .fa-brands {
                 padding: 10px;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 border-radius: 50%;
                 color: #3d535f;
             }
@@ -44,60 +44,63 @@ main {
 
         figure {
             img {
-                padding: 20px;
+                padding: 25px;
             }
         }
 
         .aboutMeText {
             display: flex;
             flex-direction: column;
-            padding: 30px 20px 0 20px;
+            padding: 10px 40px 0 ;
             gap: 10px;
             line-height: 24px;
+
+            h3 {
+                padding-bottom: 30px;
+            }
+
+            p {
+                padding-bottom: 20px;
+            }
         }
     }
 
     .skills{
-        padding: 50px 0;
 
         h2 {
-            padding-bottom: 30px;
+            padding: 10px 0 10px 0;
+            font-size: 1rem;
+            justify-content: left;
         }
 
         ul {
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
+            justify-content: space-between;
 
             li {
-                width: 20%;
                 display: flex;
                 flex-direction: column;
+                flex-wrap: wrap;
                 align-items: center;
                 height: 200px;
                 padding-top: 2%;
                 gap: 10px;
+                font-size: 0.8rem;
             }
 
             i {
-                padding: 20px;
-                border-radius: 50%;
-            }
-
-            img {
-                height: 80px;
-                width: 80px;
                 padding: 15px;
                 border-radius: 50%;
             }
 
-
-
-            
-            .fa {
-                font-size: 2rem;
+            img {
+                height: 42px;
+                width: 42px;
+                padding: 15px;
+                border-radius: 50%;
             }
+            
         }
     }
 
@@ -105,18 +108,37 @@ main {
     .projects {
         ul {
             display: flex;
-            flex-direction: column;
-            gap: 50px;
+            gap: 20px;
             align-items: center;
             
             li {
-                width: 50%;
+                flex-basis: 32%;
+                height: auto;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 align-items: center;
+                border-radius: 5px;
+                position: relative;
+
+                img{
+                    height: 205px;
+                    z-index: 500;
+                   
+                }
+
+                p{
+                    position: absolute;
+                    left: 7%;
+                    bottom: 32%;
+                    font-size: 0.7rem;
+                }
                 
+            }
+
+            .container {
+                width: 100%;
             }
 
             img {
@@ -126,14 +148,14 @@ main {
             }
 
             img:hover {
-                transform: translateY(-10px)
+                transform: translateY(-30px)
             }
         }
     }
 
     .contactMe {
         h2 {
-            padding: 80px 0 40px 0;
+            padding: 120px 0 40px 0;
         }
 
         p{

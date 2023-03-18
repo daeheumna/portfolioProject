@@ -7,11 +7,15 @@ header {
     .navBar {
         display: flex;
         justify-content: space-between;
-        cursor: pointer;
         padding-top: 10px;
         color: #3d535f;
         position: fixed;
-        // background-color: $primaryWhite;
+        background-color: $primaryWhite;
+        z-index:600;
+
+        // I know this looks goofy but has a real purpose
+        margin-left: -10px;
+        padding-left: 10px;
     }
 
     // Ham Menu
@@ -156,10 +160,23 @@ header {
         }
     }
 
+    // .hamburger-btn {
+    //     display: none;
+    // }
+
+    // .navItems {
+    //     display: flex;
+    //     gap: 30px;
+    // }
+
+    // .navItems li:hover {
+    //     border-bottom: 2px solid;
+    // }
+
 
     .heading {
         display:flex;
-        padding: 15% 0 0 0%;
+        padding: 20% 0 0 0%;
         overflow: hidden;
     }
 
@@ -195,11 +212,7 @@ header {
         color:#3d535f;
         width: 100%;
     }
-
-    .autoType {
-        text-transform: capitalize;
-    }
-
+    
     .btns {
         width: 100%;
         position: relative;
@@ -212,7 +225,11 @@ header {
             margin: 10px 5px;
             letter-spacing: 5px;
             text-transform: uppercase;
-            // box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+        }
+        
+        button:after {
+            border-radius: 20px;
         }
 
         button:hover{
@@ -224,7 +241,7 @@ header {
         position: absolute;
         bottom: 3%;
         right: 50%;
-        font-size: 3rem;
+        font-size: 2rem;
         animation: floating 2s ease infinite;
         color: $primaryGrey;
     }

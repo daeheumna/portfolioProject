@@ -1,0 +1,11 @@
+@media (max-width: 1000px) {
+    header {
+        .navItems {
+            display: none;
+        }
+
+        .hamburger-btn {
+            display: flex !important;
+        }
+    }
+}

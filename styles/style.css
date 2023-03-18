@@ -255,7 +255,7 @@ ul {
 }
 
 .wrapper {
-  width: 85%;
+  width: 80%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -274,6 +274,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, button {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  color: #3d535f;
 }
 
 .outer-shadow {
@@ -322,10 +323,13 @@ header .navBar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  cursor: pointer;
   padding-top: 10px;
   color: #3d535f;
   position: fixed;
+  background-color: #eff0f4;
+  z-index: 600;
+  margin-left: -10px;
+  padding-left: 10px;
 }
 header .hamburger-btn {
   height: 40px;
@@ -475,7 +479,7 @@ header .heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15% 0 0 0%;
+  padding: 20% 0 0 0%;
   overflow: hidden;
 }
 header .cols {
@@ -506,9 +510,6 @@ header h1 {
   color: #3d535f;
   width: 100%;
 }
-header .autoType {
-  text-transform: capitalize;
-}
 header .btns {
   width: 100%;
   position: relative;
@@ -521,6 +522,10 @@ header .btns button {
   margin: 10px 5px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  border-radius: 20px;
+}
+header .btns button:after {
+  border-radius: 20px;
 }
 header .btns button:hover {
   opacity: 0.9;
@@ -529,7 +534,7 @@ header .fa-angle-double-down {
   position: absolute;
   bottom: 3%;
   right: 50%;
-  font-size: 3rem;
+  font-size: 2rem;
   -webkit-animation: floating 2s ease infinite;
           animation: floating 2s ease infinite;
   color: #3d535f;
@@ -570,7 +575,7 @@ main h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 0 80px 0;
+  padding: 70px 0 80px 0;
 }
 main .aboutMeContainer {
   display: -webkit-box;
@@ -579,7 +584,7 @@ main .aboutMeContainer {
   gap: 20px;
 }
 main .aboutMeContainer .pfPic {
-  width: 100%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,14 +610,14 @@ main .aboutMeContainer .pfPic button {
 main .aboutMeContainer .pfPic button:after {
   border-radius: 50%;
 }
-main .aboutMeContainer .pfPic .fa {
+main .aboutMeContainer .pfPic .fa-brands {
   padding: 10px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   border-radius: 50%;
   color: #3d535f;
 }
 main .aboutMeContainer figure img {
-  padding: 20px;
+  padding: 25px;
 }
 main .aboutMeContainer .aboutMeText {
   display: -webkit-box;
@@ -622,15 +627,22 @@ main .aboutMeContainer .aboutMeText {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 20px 0 20px;
+  padding: 10px 40px 0;
   gap: 10px;
   line-height: 24px;
 }
-main .skills {
-  padding: 50px 0;
+main .aboutMeContainer .aboutMeText h3 {
+  padding-bottom: 30px;
+}
+main .aboutMeContainer .aboutMeText p {
+  padding-bottom: 20px;
 }
 main .skills h2 {
-  padding-bottom: 30px;
+  padding: 10px 0 10px 0;
+  font-size: 1rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 main .skills ul {
   display: -webkit-box;
@@ -638,13 +650,11 @@ main .skills ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .skills ul li {
-  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,41 +662,39 @@ main .skills ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 200px;
   padding-top: 2%;
   gap: 10px;
+  font-size: 0.8rem;
 }
 main .skills ul i {
-  padding: 20px;
-  border-radius: 50%;
-}
-main .skills ul img {
-  height: 80px;
-  width: 80px;
   padding: 15px;
   border-radius: 50%;
 }
-main .skills ul .fa {
-  font-size: 2rem;
+main .skills ul img {
+  height: 42px;
+  width: 42px;
+  padding: 15px;
+  border-radius: 50%;
 }
 main .projects ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 50px;
+  gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 main .projects ul li {
-  width: 50%;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  height: auto;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,6 +707,21 @@ main .projects ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 5px;
+  position: relative;
+}
+main .projects ul li img {
+  height: 205px;
+  z-index: 500;
+}
+main .projects ul li p {
+  position: absolute;
+  left: 7%;
+  bottom: 32%;
+  font-size: 0.7rem;
+}
+main .projects ul .container {
+  width: 100%;
 }
 main .projects ul img {
   max-height: 400px;
@@ -707,11 +730,11 @@ main .projects ul img {
   cursor: pointer;
 }
 main .projects ul img:hover {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 main .contactMe h2 {
-  padding: 80px 0 40px 0;
+  padding: 120px 0 40px 0;
 }
 main .contactMe p {
   width: 50%;
@@ -786,4 +809,103 @@ main footer {
 }
 main footer p {
   font-size: 0.6rem;
+}
+
+@media (max-width: 1000px) {
+  header .navItems {
+    display: none;
+  }
+  header .hamburger-btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  padding-top: 20px;
+}
+.container a {
+  padding: 20px;
+  background: #eff0f4;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eff0f4;
+  z-index: 1100;
+}
+.modal .modal-container {
+  width: 500px;
+  border: 5px solid #eff0f4;
+  z-index: 1;
+}
+.modal .modal-container button {
+  background-color: transparent;
+  margin: 0;
+  color: black;
+}
+.modal .modal-container a {
+  color: black;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.modal-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.modal-container {
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  padding: 30px;
+}
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: red;
+  background: none;
+  border: 0px;
+  font-weight: bold;
+  cursor: pointer;
 }
