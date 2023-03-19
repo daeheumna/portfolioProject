@@ -818,6 +818,22 @@ main .projects a:hover {
 main .projects i {
   font-size: 0.8rem;
 }
+main .projects .hidden {
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+main .projects .show {
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
 main .contactMe {
   margin-bottom: 100px;
 }
@@ -1009,6 +1025,12 @@ main footer p {
   }
   .contactMe .send-btn {
     width: 20%;
+  }
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    -webkit-transition: none;
+    transition: none;
   }
 }
 .container {
