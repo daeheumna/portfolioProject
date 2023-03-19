@@ -270,11 +270,15 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, button {
+h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   color: #3d535f;
+}
+
+.pink {
+  color: #e96269;
 }
 
 .outer-shadow {
@@ -373,6 +377,11 @@ header .hamburger-btn span:before {
 header .hamburger-btn span:after {
   top: 6px;
 }
+header .hamburger-btn:hover span:before,
+header .hamburger-btn:hover span:after,
+header .hamburger-btn:hover span {
+  background-color: #e96269;
+}
 header .nav-menu {
   position: fixed;
   background-color: #eff0f4;
@@ -437,11 +446,14 @@ header .nav-menu .close-nav-menu {
   cursor: pointer;
   text-align: center;
 }
+header .close-nav-menu:hover {
+  color: #e96269;
+}
 header .nav-menu .close-nav-menu:after {
   border-radius: 50%;
 }
 header .nav-menu-inner {
-  min-height: 100vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,6 +484,9 @@ header .nav-menu ul li a {
 header .nav-menu ul li a:after {
   border-radius: 30px;
 }
+header .nav-menu ul li a:hover {
+  color: #e96269;
+}
 header .nav-menu ul li:last-child {
   margin-bottom: 0;
 }
@@ -481,9 +496,6 @@ header .heading {
   display: flex;
   padding: 25% 0 0 0%;
   overflow: hidden;
-}
-header .cols {
-  width: 50%;
 }
 header .cols {
   width: 100%;
@@ -521,7 +533,6 @@ header .btns button {
   padding: 8px 15px;
   margin: 10px 5px;
   letter-spacing: 5px;
-  text-transform: uppercase;
   border-radius: 20px;
 }
 header .btns button:after {
@@ -529,6 +540,7 @@ header .btns button:after {
 }
 header .btns button:hover {
   opacity: 0.9;
+  color: #e96269;
 }
 header .fa-angle-double-down {
   position: absolute;
@@ -538,6 +550,9 @@ header .fa-angle-double-down {
   -webkit-animation: floating 2s ease infinite;
           animation: floating 2s ease infinite;
   color: #3d535f;
+}
+header .fa-angle-double-down:hover {
+  color: #e96269;
 }
 @-webkit-keyframes floating {
   0% {
@@ -575,7 +590,7 @@ main h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 70px 0 80px 0;
+  padding: 70px 0 40px 0;
 }
 main .aboutMeContainer {
   display: -webkit-box;
@@ -610,6 +625,9 @@ main .aboutMeContainer .pfPic button {
 main .aboutMeContainer .pfPic button:after {
   border-radius: 50%;
 }
+main .aboutMeContainer .pfPic .fa-brands:hover {
+  color: #e96269;
+}
 main .aboutMeContainer .pfPic .fa-brands {
   padding: 10px;
   font-size: 1.5rem;
@@ -617,7 +635,7 @@ main .aboutMeContainer .pfPic .fa-brands {
   color: #3d535f;
 }
 main .aboutMeContainer figure img {
-  padding: 25px;
+  padding: 8%;
 }
 main .aboutMeContainer .aboutMeText {
   display: -webkit-box;
@@ -627,19 +645,21 @@ main .aboutMeContainer .aboutMeText {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 40px 0;
-  gap: 10px;
+  padding: 15px 40px 0;
+  gap: 20px;
   line-height: 24px;
 }
 main .aboutMeContainer .aboutMeText h3 {
+  font-size: 2.2rem;
   padding-bottom: 30px;
+  line-height: 2.2rem;
 }
 main .aboutMeContainer .aboutMeText p {
   padding-bottom: 20px;
 }
 main .skills h2 {
   padding: 50px 0 10px 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -674,7 +694,6 @@ main .skills ul i {
   padding: 15px;
   border-radius: 50%;
   font-size: 2rem;
-  color: black;
 }
 main .skills ul img {
   height: 70px;
@@ -693,7 +712,7 @@ main .projects ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -723,6 +742,8 @@ main .projects ul li p {
   left: 7%;
   bottom: 16%;
   font-size: 0.7rem;
+  color: #e96269;
+  font-weight: 700;
 }
 main .projects ul .container {
   width: 100%;
@@ -755,7 +776,7 @@ main .projects .modal-container img {
   min-width: 500px;
 }
 main .projects .modal-container-one {
-  overflow: hidden;
+  overflow: auto;
   height: 25%;
   margin-top: 20px;
 }
@@ -769,13 +790,21 @@ main .projects .live-links {
   gap: 30px;
   padding-top: 20px;
 }
+main .projects .fa-brands {
+  color: #e96269;
+}
 main .projects a {
-  border: 3px solid #eff0f4;
-  padding: 5px;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+main .projects a:after {
+  border-radius: 25px;
+}
+main .projects a:hover {
+  color: #e96269;
 }
 main .projects i {
   font-size: 0.8rem;
-  color: black;
 }
 main .contactMe {
   margin-bottom: 100px;
@@ -808,6 +837,9 @@ main .contactMe .fa-brands {
   font-size: 1.5rem;
   border-radius: 50%;
   color: #3d535f;
+}
+main .contactMe .fa-brands:hover {
+  color: #e96269;
 }
 main .contactMe form {
   display: -webkit-box;
@@ -867,6 +899,9 @@ main .contactMe form button:after {
 }
 main .contactMe form a {
   color: #3d535f;
+}
+main .contactMe form button:hover a {
+  color: #e96269;
 }
 main footer {
   display: -webkit-box;
@@ -941,7 +976,7 @@ main footer p {
   }
 }
 @media (max-width: 700px) {
-  .projects p {
+  .projects .view-more {
     display: none;
   }
 }

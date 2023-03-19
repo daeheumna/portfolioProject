@@ -36,7 +36,6 @@ var typingEffect = new Typed('.autoType', {
     typeSpeed: 110,
     backSpeed : 80,
     backDelay : 1500,
-    cursorChar: '_',
     loop : true
 })
 
