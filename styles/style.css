@@ -479,7 +479,7 @@ header .heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20% 0 0 0%;
+  padding: 25% 0 0 0%;
   overflow: hidden;
 }
 header .cols {
@@ -584,7 +584,7 @@ main .aboutMeContainer {
   gap: 20px;
 }
 main .aboutMeContainer .pfPic {
-  width: 60%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,6 +682,9 @@ main .skills ul img {
   padding: 15px;
   border-radius: 50%;
 }
+main .projects {
+  margin: 150px 0 150px 0;
+}
 main .projects ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,7 +720,7 @@ main .projects ul li img {
 main .projects ul li p {
   position: absolute;
   left: 7%;
-  bottom: 32%;
+  bottom: 22%;
   font-size: 0.7rem;
 }
 main .projects ul .container {
@@ -733,8 +736,32 @@ main .projects ul img:hover {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
+main .projects .modal {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+main .projects .modal-container {
+  width: 65%;
+  height: 80%;
+  overflow: scroll;
+  margin-bottom: 30px;
+}
+main .projects .modal-container img {
+  min-width: 500px;
+}
+main .projects .modal-container-one {
+  overflow: hidden;
+  height: 25%;
+  margin-top: 20px;
+}
+main .contactMe {
+  margin-bottom: 100px;
+}
 main .contactMe h2 {
-  padding: 120px 0 40px 0;
+  padding: 120px 0 80px 0;
 }
 main .contactMe p {
   width: 50%;
@@ -788,7 +815,7 @@ main .contactMe form button {
   background-color: #eff0f4;
   width: 10%;
   padding: 10px 0;
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 25px;
 }
 main .contactMe form button:after {
@@ -811,14 +838,40 @@ main footer p {
   font-size: 0.6rem;
 }
 
-@media (max-width: 1000px) {
-  header .navItems {
-    display: none;
+@media (max-width: 1400px) {
+  .aboutMe .aboutMeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  header .hamburger-btn {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+  .aboutMe .pfPic {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutMe .imgContainer {
+    width: 40%;
+  }
+  .projects ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .projects ul li {
+    width: 70%;
+  }
+  .projects ul img {
+    height: auto !important;
+  }
+  .projects ul p {
+    left: 5% !important;
+    bottom: 16% !important;
   }
 }
 .container {
@@ -849,8 +902,8 @@ main footer p {
   height: 100vh;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   top: 0;
   left: 0;
   display: -webkit-box;
@@ -866,17 +919,12 @@ main footer p {
   z-index: 1100;
 }
 .modal .modal-container {
-  width: 500px;
-  border: 5px solid #eff0f4;
+  width: 70%;
   z-index: 1;
 }
 .modal .modal-container button {
   background-color: transparent;
   margin: 0;
-  color: black;
-}
-.modal .modal-container a {
-  color: black;
 }
 .modal.open {
   visibility: visible;

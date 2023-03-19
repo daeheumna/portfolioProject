@@ -13,7 +13,7 @@ main {
         gap: 20px;
 
         .pfPic {
-            width: 60%;
+            width: 80%;
             display: flex;
             flex-direction: column;
             gap: 15px;
@@ -106,6 +106,9 @@ main {
 
 
     .projects {
+        margin: 150px 0 150px 0;
+    
+
         ul {
             display: flex;
             gap: 20px;
@@ -131,7 +134,7 @@ main {
                 p{
                     position: absolute;
                     left: 7%;
-                    bottom: 32%;
+                    bottom: 22%;
                     font-size: 0.7rem;
                 }
                 
@@ -151,11 +154,35 @@ main {
                 transform: translateY(-30px)
             }
         }
+
+        .modal {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .modal-container {
+            width: 65%;
+            height: 80%;
+            overflow:scroll;
+            margin-bottom: 30px;
+
+            img{
+                min-width: 500px;
+            }
+        }
+
+        .modal-container-one {
+            overflow: hidden;
+            height: 25%;
+            margin-top: 20px;
+        }
     }
 
     .contactMe {
+        margin-bottom: 100px;
+
         h2 {
-            padding: 120px 0 40px 0;
+            padding: 120px 0 80px 0;
         }
 
         p{
@@ -203,7 +230,7 @@ main {
                 background-color: #eff0f4;
                 width: 10%;
                 padding: 10px 0;
-                margin-top: 10px;
+                margin-top: 20px;
                 border-radius: 25px;
             }
 

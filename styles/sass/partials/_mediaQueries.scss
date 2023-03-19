@@ -1,11 +1,41 @@
-@media (max-width: 1000px) {
-    header {
-        .navItems {
-            display: none;
+@media (max-width: 1400px) {
+    .aboutMe {
+        .aboutMeContainer {
+            flex-direction: column;
+            align-items: center;
         }
 
-        .hamburger-btn {
-            display: flex !important;
+        .pfPic {
+            align-items: center;
+        }
+
+        .imgContainer {
+            width:40%;
         }
     }
+
+    .projects {
+        ul {
+            flex-direction: column;
+            gap: 50px;
+
+            li {
+                width: 70%;
+            }
+
+            img {
+                height: auto !important;
+            }
+
+            p {
+                left: 5% !important;
+                bottom: 16% !important;  
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+
 }
