@@ -68,35 +68,36 @@ main {
     .skills{
 
         h2 {
-            padding: 10px 0 10px 0;
+            padding: 50px 0 10px 0;
             font-size: 1rem;
-            justify-content: left;
+            justify-content: center;
         }
 
         ul {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
 
             li {
+                width: 10%;
                 display: flex;
                 flex-direction: column;
-                flex-wrap: wrap;
                 align-items: center;
-                height: 200px;
                 padding-top: 2%;
                 gap: 10px;
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
 
             i {
                 padding: 15px;
                 border-radius: 50%;
+                font-size: 2rem;
+                color: black;
             }
 
             img {
-                height: 42px;
-                width: 42px;
+                height: 70px;
+                width: 70px;
                 padding: 15px;
                 border-radius: 50%;
             }
@@ -106,17 +107,16 @@ main {
 
 
     .projects {
-        margin: 150px 0 150px 0;
+        margin: 100px 0 50px 0;
     
-
         ul {
             display: flex;
+            flex-direction: column;
             gap: 20px;
             align-items: center;
             
             li {
-                flex-basis: 32%;
-                height: auto;
+                width: 65%;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
@@ -126,15 +126,15 @@ main {
                 position: relative;
 
                 img{
-                    height: 205px;
                     z-index: 500;
                    
                 }
+                
 
                 p{
                     position: absolute;
                     left: 7%;
-                    bottom: 22%;
+                    bottom: 16%;
                     font-size: 0.7rem;
                 }
                 
@@ -151,7 +151,7 @@ main {
             }
 
             img:hover {
-                transform: translateY(-30px)
+                transform: translateY(-40px)
             }
         }
 
@@ -165,6 +165,7 @@ main {
             height: 80%;
             overflow:scroll;
             margin-bottom: 30px;
+            background-color: $primaryWhite;
 
             img{
                 min-width: 500px;
@@ -176,18 +177,60 @@ main {
             height: 25%;
             margin-top: 20px;
         }
+
+        .live-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 20px;
+        }
+
+        a {
+            border: 3px solid $primaryWhite;
+            padding: 5px;
+        }
+
+        i {
+            font-size: 0.8rem;
+            color: black;
+        }
+
+       
     }
 
     .contactMe {
         margin-bottom: 100px;
 
         h2 {
-            padding: 120px 0 80px 0;
+            padding: 100px 0 40px 0;
         }
 
         p{
             width: 50%;
-          
+        }
+
+        .socialIcons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 30px;
+        }
+
+        button {
+            border-radius: 50%;
+            background-color: #eff0f4;
+        }
+
+        button:after{
+            border-radius: 50%;
+            
+        }
+
+        .fa-brands {
+            padding: 10px;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            color: #3d535f;
         }
 
         form{
@@ -232,6 +275,7 @@ main {
                 padding: 10px 0;
                 margin-top: 20px;
                 border-radius: 25px;
+                font-size: 0.8rem;
             }
 
             button:after{

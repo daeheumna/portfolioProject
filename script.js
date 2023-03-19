@@ -32,7 +32,7 @@ document.addEventListener('click', (event) => {
 
 
 var typingEffect = new Typed('.autoType', {
-    strings : ['denny', 'coder', 'web-dev', 'designer'],
+    strings : ['denny', 'coder', 'web-dev'],
     typeSpeed: 110,
     backSpeed : 80,
     backDelay : 1500,
