@@ -15,6 +15,7 @@ header {
 
         margin-left: -10px;
         padding-left: 10px;
+        padding-bottom: 10px;
     }
 
     .hamburger-btn {
@@ -62,6 +63,10 @@ header {
     .hamburger-btn:hover span:after,
     .hamburger-btn:hover span {
         background-color: $primaryPink;
+    }
+
+    .hamburger-btn {
+        display: none;
     }
 
     // Nav Menu  
@@ -169,6 +174,17 @@ header {
 
         li:last-child{
             margin-bottom:0;
+        }
+    }
+
+    .nav-bar {
+        ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        a:hover {
+            color: $primaryPink;
         }
     }
 

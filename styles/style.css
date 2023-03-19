@@ -334,6 +334,7 @@ header .navBar {
   z-index: 600;
   margin-left: -10px;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 header .hamburger-btn {
   height: 40px;
@@ -381,6 +382,9 @@ header .hamburger-btn:hover span:before,
 header .hamburger-btn:hover span:after,
 header .hamburger-btn:hover span {
   background-color: #e96269;
+}
+header .hamburger-btn {
+  display: none;
 }
 header .nav-menu {
   position: fixed;
@@ -489,6 +493,15 @@ header .nav-menu ul li a:hover {
 }
 header .nav-menu ul li:last-child {
   margin-bottom: 0;
+}
+header .nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+header .nav-bar a:hover {
+  color: #e96269;
 }
 header .heading {
   display: -webkit-box;
@@ -763,7 +776,6 @@ main .projects .modal {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
 }
 main .projects .modal-container {
   width: 65%;
@@ -918,6 +930,9 @@ main footer p {
 }
 
 @media (max-width: 1400px) {
+  .heading {
+    padding-top: 30% !important;
+  }
   .aboutMe .aboutMeText {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -948,6 +963,14 @@ main footer p {
   }
 }
 @media (max-width: 1000px) {
+  .nav-bar {
+    display: none;
+  }
+  .hamburger-btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   .skills li {
     width: 20% !important;
   }

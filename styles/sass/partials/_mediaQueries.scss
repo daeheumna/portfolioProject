@@ -1,4 +1,8 @@
 @media (max-width: 1400px) {
+    .heading{
+        padding-top: 30% !important;
+    }
+
     .aboutMe {
 
         .aboutMeText {
@@ -32,6 +36,14 @@
 
 
 @media (max-width: 1000px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .hamburger-btn{
+        display: flex !important;
+    }
+
     .skills {
         li {
             width: 20% !important;
