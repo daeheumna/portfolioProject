@@ -782,7 +782,6 @@ main .projects .modal-container {
   height: 80%;
   overflow: scroll;
   margin-bottom: 30px;
-  background-color: #eff0f4;
 }
 main .projects .modal-container img {
   min-width: 500px;
