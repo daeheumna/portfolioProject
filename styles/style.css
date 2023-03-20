@@ -928,7 +928,7 @@ main .contactMe form button:after {
 main .contactMe form a {
   color: #3d535f;
 }
-main .contactMe form button:hover a {
+main .contactMe form button:hover {
   color: #e96269;
 }
 main footer {
