@@ -749,7 +749,7 @@ main .projects ul li img {
 main .projects ul li p {
   position: absolute;
   left: 7%;
-  bottom: 23%;
+  bottom: 25%;
   font-size: 0.7rem;
   color: #e96269;
   font-weight: 700;
@@ -845,7 +845,7 @@ main .contactMe {
   margin-bottom: 100px;
 }
 main .contactMe h2 {
-  padding: 100px 0 40px 0;
+  padding: 120px 0 50px 0;
 }
 main .contactMe p {
   width: 50%;
@@ -978,6 +978,8 @@ main footer p {
   .aboutMe .imgContainer {
     width: 40%;
   }
+}
+@media (max-width: 1215px) {
   .projects ul {
     gap: 50px;
     -webkit-box-orient: vertical;
@@ -989,7 +991,7 @@ main footer p {
     width: 75% !important;
   }
   .projects ul li p {
-    bottom: 19% !important;
+    bottom: 19.5% !important;
   }
 }
 @media (max-width: 1000px) {
@@ -1000,6 +1002,9 @@ main footer p {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+  .pfPic .imgContainer {
+    width: 65%;
   }
   .skills li {
     width: 20% !important;
