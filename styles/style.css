@@ -231,7 +231,7 @@ html {
 }
 
 body {
-  background-color: #eff0f4;
+  background-color: #FFF;
 }
 
 figure {
@@ -330,7 +330,7 @@ header .navBar {
   padding-top: 10px;
   color: #3d535f;
   position: fixed;
-  background-color: #eff0f4;
+  background-color: #FFF;
   z-index: 600;
   margin-left: -10px;
   padding-left: 10px;
@@ -388,7 +388,7 @@ header .hamburger-btn {
 }
 header .nav-menu {
   position: fixed;
-  background-color: #eff0f4;
+  background-color: #FFF;
   padding: 0 15px;
   left: 0;
   top: 0;
@@ -406,7 +406,7 @@ header .fade-out-effect {
   width: 100%;
   height: 100%;
   visibility: hidden;
-  background-color: #eff0f4;
+  background-color: #FFF;
 }
 header .fade-out-effect.active {
   visibility: visible;
@@ -542,7 +542,7 @@ header .btns {
 }
 header .btns button {
   color: #3d535f;
-  background-color: #eff0f4;
+  background-color: #FFF;
   padding: 8px 15px;
   margin: 10px 5px;
   letter-spacing: 5px;
@@ -633,7 +633,7 @@ main .aboutMeContainer .pfPic .socialIcons {
 }
 main .aboutMeContainer .pfPic button {
   border-radius: 50%;
-  background-color: #eff0f4;
+  background-color: #FFF;
 }
 main .aboutMeContainer .pfPic button:after {
   border-radius: 50%;
@@ -721,10 +721,6 @@ main .projects ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -753,7 +749,7 @@ main .projects ul li img {
 main .projects ul li p {
   position: absolute;
   left: 7%;
-  bottom: 16%;
+  bottom: 23%;
   font-size: 0.7rem;
   color: #e96269;
   font-weight: 700;
@@ -768,8 +764,8 @@ main .projects ul img {
   cursor: pointer;
 }
 main .projects ul img:hover {
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
 }
 main .projects .modal {
   -webkit-box-orient: vertical;
@@ -821,8 +817,8 @@ main .projects .hidden {
   opacity: 0;
   -webkit-filter: blur(5px);
           filter: blur(5px);
-  -webkit-transform: translateX(-30%);
-          transform: translateX(-30%);
+  -webkit-transform: translateX(-70%);
+          transform: translateX(-70%);
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -832,6 +828,18 @@ main .projects .show {
           filter: blur(0);
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+main .projects .pject:nth-child(2) {
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+main .projects .pject:nth-child(3) {
+  -webkit-transition-delay: 350ms;
+          transition-delay: 350ms;
+}
+main .projects .pject:nth-child(4) {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
 }
 main .contactMe {
   margin-bottom: 100px;
@@ -854,7 +862,7 @@ main .contactMe .socialIcons {
 }
 main .contactMe button {
   border-radius: 50%;
-  background-color: #eff0f4;
+  background-color: #FFF;
 }
 main .contactMe button:after {
   border-radius: 50%;
@@ -903,7 +911,7 @@ main .contactMe form input {
   padding: 10px 20px;
   width: 100%;
   border-radius: 25px;
-  background-color: #eff0f4;
+  background-color: #FFF;
 }
 main .contactMe form textarea {
   width: 50%;
@@ -911,10 +919,10 @@ main .contactMe form textarea {
   border: none;
   border-radius: 25px;
   height: 170px;
-  background-color: #eff0f4;
+  background-color: #FFF;
 }
 main .contactMe form button {
-  background-color: #eff0f4;
+  background-color: #FFF;
   width: 10%;
   padding: 10px 0;
   margin-top: 20px;
@@ -972,9 +980,16 @@ main footer p {
   }
   .projects ul {
     gap: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .projects ul li {
     width: 75% !important;
+  }
+  .projects ul li p {
+    bottom: 19% !important;
   }
 }
 @media (max-width: 1000px) {
@@ -988,9 +1003,6 @@ main footer p {
   }
   .skills li {
     width: 20% !important;
-  }
-  .projects p {
-    bottom: 20% !important;
   }
 }
 @media (max-width: 900px) {
@@ -1047,7 +1059,7 @@ main footer p {
 }
 .container a {
   padding: 20px;
-  background: #eff0f4;
+  background: #FFF;
   color: #fff;
   font-weight: bold;
   border-radius: 10px;
@@ -1073,7 +1085,7 @@ main footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #eff0f4;
+  background-color: #FFF;
   z-index: 1100;
 }
 .modal .modal-container {

@@ -116,7 +116,7 @@ main {
     
         ul {
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             gap: 30px;
             align-items: center;
             
@@ -138,7 +138,7 @@ main {
                 p{
                     position: absolute;
                     left: 7%;
-                    bottom: 16%;
+                    bottom: 23%;
                     font-size: 0.7rem;
                     color: $primaryPink;
                     font-weight: 700;
@@ -157,8 +157,10 @@ main {
             }
 
             img:hover {
-                transform: translateY(-40px)
+                transform: translateY(-45px)
             }
+
+            
         }
 
         .modal {
@@ -215,7 +217,7 @@ main {
         .hidden {
             opacity: 0;
             filter: blur(5px);
-            transform: translateX(-30%);
+            transform: translateX(-70%);
             transition: all 1s;
         }
         
@@ -223,6 +225,16 @@ main {
             opacity: 1;
             filter: blur(0);
             transform: translateX(0)
+        }
+
+        .pject:nth-child(2) {
+            transition-delay: 200ms;
+        }
+        .pject:nth-child(3) {
+            transition-delay: 350ms;
+        }
+        .pject:nth-child(4) {
+            transition-delay: 500ms;
         }
        
     }

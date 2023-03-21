@@ -26,9 +26,14 @@
     .projects {
         ul {
             gap: 50px;
+            flex-direction: column;
 
             li {
                 width: 75% !important;
+
+                p {
+                    bottom: 19% !important;
+                }
             }
         }
     }
@@ -47,12 +52,6 @@
     .skills {
         li {
             width: 20% !important;
-        }
-    }
-
-    .projects {
-        p {
-            bottom: 20% !important;
         }
     }
 }
