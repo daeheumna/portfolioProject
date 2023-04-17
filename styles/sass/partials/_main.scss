@@ -139,12 +139,9 @@ main {
                 }
                 
                 p{
-                    // position: absolute;
-                    // left: 7%;
-                    // bottom: 25%;
                     font-size: 0.7rem;
-                    // color: $primaryPink;
                     font-weight: 700;
+                    text-align: center;
                 }
                 
             }
@@ -162,7 +159,7 @@ main {
             }
 
             img:hover {
-                transform: translateY(-45px)
+                transform: translateY(-25px)
             }
 
             

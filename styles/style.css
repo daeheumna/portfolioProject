@@ -755,6 +755,7 @@ main .projects ul li img {
 main .projects ul li p {
   font-size: 0.7rem;
   font-weight: 700;
+  text-align: center;
 }
 main .projects ul .container {
   width: 100%;
@@ -768,8 +769,8 @@ main .projects ul img {
   border-radius: 5px;
 }
 main .projects ul img:hover {
-  -webkit-transform: translateY(-45px);
-          transform: translateY(-45px);
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
 }
 main .projects .modal {
   -webkit-box-orient: vertical;
