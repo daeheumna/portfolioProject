@@ -32,7 +32,7 @@ document.addEventListener('click', (event) => {
 
 
 var typingEffect = new Typed('.autoType', {
-    strings : ['denny', 'coder', 'web-dev'],
+    strings : ['denny', ' a coder', ' a web-dev', 'designer'],
     typeSpeed: 110,
     backSpeed : 80,
     backDelay : 1500,
@@ -75,7 +75,6 @@ modals.forEach(function (trigger) {
 
 const observer = new IntersectionObserver((enteries) => {
     enteries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } 

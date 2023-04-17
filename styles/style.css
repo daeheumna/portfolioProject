@@ -327,13 +327,13 @@ header .navBar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 15px;
   color: #3d535f;
   position: fixed;
   background-color: #FFF;
   z-index: 600;
+  max-width: 1450px;
   margin-left: -10px;
-  padding-left: 10px;
   padding-bottom: 10px;
 }
 header .hamburger-btn {
@@ -671,7 +671,7 @@ main .aboutMeContainer .aboutMeText p {
   padding-bottom: 20px;
 }
 main .skills h2 {
-  padding: 50px 0 10px 0;
+  padding: 120px 0 10px 0;
   font-size: 1.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -715,19 +715,25 @@ main .skills ul img {
   border-radius: 50%;
 }
 main .projects {
-  margin: 100px 0 50px 0;
+  margin: 100px 0 80px 0;
 }
 main .projects ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 30px;
+  align-items: center;
 }
 main .projects ul li {
-  width: 65%;
+  width: 45%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,21 +753,19 @@ main .projects ul li img {
   z-index: 500;
 }
 main .projects ul li p {
-  position: absolute;
-  left: 7%;
-  bottom: 25%;
   font-size: 0.7rem;
-  color: #e96269;
   font-weight: 700;
 }
 main .projects ul .container {
   width: 100%;
+  padding-top: 0;
 }
 main .projects ul img {
   max-height: 400px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
+  border-radius: 5px;
 }
 main .projects ul img:hover {
   -webkit-transform: translateY(-45px);
@@ -795,7 +799,6 @@ main .projects .live-links {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  padding-top: 20px;
 }
 main .projects .fa-brands {
   color: #e96269;

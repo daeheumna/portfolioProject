@@ -74,7 +74,7 @@ main {
     .skills{
 
         h2 {
-            padding: 50px 0 10px 0;
+            padding: 120px 0 10px 0;
             font-size: 1.2rem;
             justify-content: center;
         }
@@ -112,16 +112,19 @@ main {
 
 
     .projects {
-        margin: 100px 0 50px 0;
+        margin: 100px 0 80px 0;
     
         ul {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             // flex-direction: column;
             gap: 30px;
             align-items: center;
             
             li {
-                width: 65%;
+                width: 45%;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
@@ -136,11 +139,11 @@ main {
                 }
                 
                 p{
-                    position: absolute;
-                    left: 7%;
-                    bottom: 25%;
+                    // position: absolute;
+                    // left: 7%;
+                    // bottom: 25%;
                     font-size: 0.7rem;
-                    color: $primaryPink;
+                    // color: $primaryPink;
                     font-weight: 700;
                 }
                 
@@ -148,12 +151,14 @@ main {
 
             .container {
                 width: 100%;
+                padding-top: 0;
             }
 
             img {
                 max-height: 400px;
                 transition: all 0.3s ease;
                 cursor: pointer;
+                border-radius: 5px;
             }
 
             img:hover {
@@ -188,7 +193,7 @@ main {
             display: flex;
             justify-content: center;
             gap: 30px;
-            padding-top: 20px;
+            // padding-top: 20px;
 
         }
 

@@ -7,14 +7,13 @@ header {
     .navBar {
         display: flex;
         justify-content: space-between;
-        padding-top: 10px;
+        padding-top: 15px;
         color: #3d535f;
         position: fixed;
         background-color: $primaryWhite;
         z-index:600;
-
+        max-width:1450px;
         margin-left: -10px;
-        padding-left: 10px;
         padding-bottom: 10px;
     }
 
@@ -234,7 +233,6 @@ header {
             padding: 8px 15px;
             margin: 10px 5px;
             letter-spacing: 5px;
-            // text-transform: uppercase;
             border-radius: 20px;
         }
         

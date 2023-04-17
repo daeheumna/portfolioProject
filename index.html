@@ -59,8 +59,8 @@
                     <h1>i'm <span class="autoType"></span></h1>
 
                     <div class="btns">
-                        <button class="outer-shadow hover-in-shadow">cv</button>
-                        <a href="#contactMe"><button class="outer-shadow hover-in-shadow">contact</button></a>
+                        <!-- <button class="outer-shadow hover-in-shadow">cv</button> -->
+                        <a href="#contactMe" ><button class="outer-shadow hover-in-shadow">contact</button></a>
                     </div>
                 </div>
             </div>
@@ -119,58 +119,82 @@
 
         <section id='projects' class="projects">
             <div class="wrapper">
-                <h2>project<span class="pink">s</span></h2>
+                <h2><span class="pink">my</span>projects</h2>
 
                 <ul>
                     <li class="outer-shadow pject hidden">
+                        <div class="container"><img src="./assets/not-so-trivial-pursit.png" alt="trivia game app " data-modal="modal-four"></div>
+                        <!-- <p class="view-more">view more</p> -->
+                        <h4>not-so-trivial-pursuit</h4>
+
+                        <p> <span class="pink">React</span> | <span class="pink">Firebase</span> | <span class="pink">Javascript</span> | <span class="pink">CSS/SASS</span> | <span class="pink">HTML</span></p>
+
+
+                        <div class="live-links">
+                            <a href="https://not-so-trivial-pursuit.netlify.app/" target="_blank" class="outer-shadow hover-in-shadow">LIVE</a>
+
+                            <a href="https://github.com/not-so-trivial-pursuit/project04" target="_blank" class="outer-shadow hover-in-shadow">GITHUB</a>
+                        </div>
+
+                    </li>
+
+                    <li class="outer-shadow pject hidden">
+                        <div class="container"><img src="./assets/recipeGenerator.png" alt="an app that generates random recipes " data-modal="modal-three"></div>
+                        <!-- <p class="view-more">view more</p> -->
+                        <h4>recipe generator</h4>
+
+                        <p> <span class="pink">React</span> | <span class="pink">Javascript</span> | <span class="pink">CSS</span> | <span class="pink">HTML</span></p>
+
+
+                        <div class="live-links">
+                            <a href="https://dhna-project-three.netlify.app/" target="_blank" class="outer-shadow hover-in-shadow">LIVE</a>
+
+                            <a href="https://github.com/daeheumna/projectThree" target="_blank" class="outer-shadow hover-in-shadow">GITHUB</a>
+                        </div>
+
+                    </li>
+
+                    <li class="outer-shadow pject hidden">
                         <div class="container"><img src="./assets/jobHunt.jpeg.png" alt="job application app" data-modal="modal-one"></div>
-                        <p class="view-more">view more</p>
+                        <!-- <p class="view-more">view more</p> -->
                         <h4>jobhunt</h4>
-                    </li>
-                    <li class="outer-shadow pject hidden">
-                        <div class="container"><img src="./assets/delish.jpeg.png" alt="website design for a restaurant called delicious" data-modal="modal-two"></div>
-                        <p class="view-more">view more</p>
-                        <h4>delicious</h4>
-                    </li>
-                    <li class="outer-shadow pject hidden">
-                        <div class="container"><img src="./assets/arora.jpeg.png" alt="website design for a jewelry store called arora" data-modal="modal-three"></div>
-                        <p class="view-more">view more</p>
-                        <h4>arora</h4>
-                    </li>
-                </ul>
-
-                <div class="modal" id="modal-one">
-                    <div class="modal-bg modal-exit"></div>
-                    <div class="modal-container modal-container-one outer-shadow">
-                        <p>JobHunt is an online app that enables individuals to stay accountable when job searching. JobHunt was built using HTML5, CSS/SASS, Javascript, and Firebase. This project was built as part of a paired-programming assignment with <em>Roberto Jan</em>.</p>
-
+                        <p><span class="pink">Javascript</span> | <span class="pink">Firebase</span> | <span class="pink">CSS</span> | <span class="pink">HTML</span></p>
+                        
                         <div class="live-links">
                             <a href="https://denny-roberto-project2.netlify.app/" target="_blank" class="outer-shadow hover-in-shadow">LIVE</a>
 
                             <a href="https://github.com/RobertoJan/JobHunt-project-2" target="_blank" class="outer-shadow hover-in-shadow">GITHUB</a>
                         </div>
+                    </li>
+                    <li class="outer-shadow pject hidden">
+                        <div class="container"><img src="./assets/delish.jpeg.png" alt="website design for a restaurant called delicious" data-modal="modal-two"></div>
+                        <!-- <p class="view-more">view more</p> -->
+                        <h4>delicious</h4>
 
-                        <button class="modal-close modal-exit"><i class="fa-brands fa-x"></i></button>
-                    </div>
-                    <div class="modal-container outer-shadow">
-                        <img src="./assets/denny-roberto-project2.netlify.app_.png" alt="full-sized image of jobhunt project" class="src">
-                    </div>
-                  </div>
-
-                  <div class="modal" id="modal-two">
-                    <div class="modal-bg modal-exit"></div>
-                    <div class="modal-container modal-container-one outer-shadow">
-                        <p>Delicious is a responsive, multipage website built using HTML5, CSS/SASS, and Javascript</p>
+                        <p><span class="pink">CSS/SASS</span> | <span class="pink">HTML</span></p>
 
                         <div class="live-links">
                             <a href="https://devprojectonedhna.netlify.app/" target="_blank" class="outer-shadow hover-in-shadow">LIVE</a>
 
                             <a href="https://github.com/daeheumna/projectOne" target="_blank" class="outer-shadow hover-in-shadow">GITHUB</a>
                         </div>
+                    </li>
 
-                        <button class="modal-close modal-exit"><i class="fa-brands fa-x"></i></button>
-                    </div>
+                    
+                </ul>
+
+                <div class="modal" id="modal-one">
+                    <div class="modal-bg modal-exit"></div>
                     <div class="modal-container outer-shadow">
+                        <button class="modal-close modal-exit"><i class="fa-brands fa-x"></i></button>
+                        <img src="./assets/denny-roberto-project2.netlify.app_.png" alt="full-sized image of jobhunt project" class="src">
+                    </div>
+                  </div>
+
+                  <div class="modal" id="modal-two">
+                    <div class="modal-bg modal-exit"></div>
+                    <div class="modal-container outer-shadow">
+                        <button class="modal-close modal-exit"><i class="fa-brands fa-x"></i></button>
                         <img src="./assets/devprojectonedhna.netlify.app_.png" alt="full-sized image of delicious project" class="src">
                       
                     </div>
@@ -178,19 +202,18 @@
 
                   <div class="modal" id="modal-three">
                     <div class="modal-bg modal-exit"></div>
-                    <div class="modal-container modal-container-one outer-shadow">
-                        <p>A simple responsive website built using HTML5 & CSS</p>
-
-                        <div class="live-links">
-                            <a href="https://animated-churros-d5907d.netlify.app/" target="_blank" class="outer-shadow hover-in-shadow">LIVE</a>
-
-                            <a href="https://github.com/daeheumna/assignmentOne-DNa" target="_blank" class="outer-shadow hover-in-shadow">GITHUB</a>
-                        </div>
-
-                        <button class="modal-close modal-exit"><i class="fa-brands fa-x"></i></button>
-                    </div>
                     <div class="modal-container outer-shadow">
-                        <img src="./assets/arora.netlify.app_.png" alt="full-sized image of arora project" class="src">
+                        <button class="modal-close modal-exit"><i class="fa-brands fa-x"></i></button>
+                        <img src="./assets/dhna-project-three.netlify.app_advancedSearch (2).png" alt="full-sized image recipeGenerator project" class="src">
+                      
+                    </div>
+                  </div>
+
+                  <div class="modal" id="modal-four">
+                    <div class="modal-bg modal-exit"></div>
+                    <div class="modal-container outer-shadow">
+                        <button class="modal-close modal-exit"><i class="fa-brands fa-x"></i></button>
+                        <img src="./assets/not-so-trivial-pursuit.netlify.app_individualSavedGame_-NSkY88b3YLxO76V9rPF.png" alt="full-sized image of trivia game app project" class="src">
                       
                     </div>
                   </div>
@@ -207,7 +230,7 @@
                 </div>
 
                 <form action="https://formspree.io/f/xvonbgke"
-                method="POST" method="post" name="contactForm">
+                method="POST" name="contactForm">
 
                     <div class="formText">
                         <div class="visitorInfo">
